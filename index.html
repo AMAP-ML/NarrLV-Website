@@ -148,6 +148,19 @@
   </div>
 </section>
 
+
+<!-- teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop" style="width: 55%; max-width: none;">
+      <div class="hero-body">
+            <img src="assets/narrlv/images/fig_framework.jpg" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+      <p style="margin-top: 0; text-align: center;">
+          Framework of NarrLV
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- Abstract. -->
 <section>
   <div class="container is-max-desktop">
@@ -156,13 +169,12 @@
         <h2 class="title is-3 is-centered">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          With the rapid development of foundation video generation technologies, long video generation models have exhibited promising research potential due to their extended content creation space. Recent studies reveal that the goal of long video generation tasks is not only to extend video duration but also to accurately express richer narrative content within longer videos. 
-          However, due to the lack of evaluation benchmarks specifically designed for long video generation models, the current assessment of these models primarily relies on benchmarks composed of simple narrative prompts, <i>e.g.</i>, VBench.
-          To comprehensively assess the <b>Narr</b>ative expression capabilities of <b>L</b>ong <b>V</b>ideo generation models, we propose a novel benchmark, <b>NarrLV</b>, based on film narrative theory.
-          (<b>i</b>) First, we define the smallest narrative unit maintaining continuous visual presentation in videos as Temporal Narrative Atom (TNA), and use its count to quantitatively measure narrative richness. 
-          Based on three film narrative elements influencing TNA changes, we construct an automatic prompt generation pipeline that can produce evaluation prompts with a flexibly expandable TNA number.
-          (<b>ii</b>) Then, based on the three progressive levels of narrative content expression, we construct a comprehensive evaluation metric using the MLLM-based question generation and answering framework.
-          (<b>iii</b>) Finally, we conduct extensive evaluations on existing long video generation models and their dependent foundation generation models. Experimental results validate that our metrics align closely with human judgments. The derived evaluation outcomes reveal in detail the capability boundaries of current video generation models in narrative content expression. 
+            With the rapid development of foundation video generation technologies, long video generation models have exhibited promising research potential thanks to greater content creation space. Recent studies reveal that the goal of long video generation tasks is not only to extend video duration but also to accurately express richer narrative content within longer videos. 
+However, due to the lack of evaluation benchmarks specifically designed for long video generation models, the current assessment of these models primarily relies on benchmarks with simple narrative prompts (\eg, VBench).
+To comprehensively assess the <b>Narr</b>ative expression capabilities of <b>L</b>ong <b>V</b>ideo generation models, we propose <b>NarrLV</b>- a novel benchmark inspired by film narrative theory.
+(<b>i</b>) First, we introduce the basic narrative unit maintaining continuous visual presentation in videos as Temporal Narrative Atom (TNA), and use its count to quantitatively measure narrative richness. Guided by three key film narrative elements influencing TNA changes, we construct an automatic prompt generation pipeline capable of producing evaluation prompts with a flexibly expandable number of TNAs.
+(<b>ii</b>) Then, based on the three progressive levels of narrative content expression, we design an effective evaluation metric using the MLLM-based question generation and answering framework.
+(<b>iii</b>) Finally, we conduct extensive evaluations on existing long video generation models and the foundation generation models that underpin them. Experimental results demonstrate that our metric aligns closely with human judgments. The derived evaluation outcomes reveal the detailed capability boundaries of current video generation models in narrative content expression. 
           </p>
         </div>
       </div>
