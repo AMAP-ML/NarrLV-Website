@@ -111,12 +111,12 @@
           <div class="publication-links">
             
             <span class="link-block">
-              <a href="" target="_blank"
+              <a href="https://arxiv.org/abs/2507.11245" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span>Paper(Coming soon)</span>
+                <span>Paper</span>
               </a>
             </span>
             <!-- Code Link. -->
@@ -148,21 +148,6 @@
   </div>
 </section>
 
-
-<!-- teaser -->
-<section class="hero teaser">
-  <div class="container is-max-desktop" style="width: 55%; max-width: none;">
-      <div class="hero-body">
-            <img src="assets/narrlv/images/fig_framework.jpg" style="width:100%; margin-bottom:2px" alt="Teaser."/>
-      <p style="margin-top: 0; ">
-          <b>Framework of our NarrLV.</b> (a) Our prompt suite is inspired by film narrative theory and identifies three key factors influencing Temporal Narrative Atom (TNA) transitions. Based on these, we construct a prompt generation pipeline capable of producing evaluation prompts with flexibly adjustable TNA counts.
-          (b) Our evaluation models include long video generation models and the foundation models they often rely on.
-          (c) Based on the progressive expression of narrative content, we conduct evaluations from three dimensions, employing an MLLM-based question generation and answering framework for calculations. Our metric is well-aligned with human preferences.
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- Abstract. -->
 <section>
   <div class="container is-max-desktop">
@@ -173,7 +158,7 @@
           <p>
             With the rapid development of foundation video generation technologies, long video generation models have exhibited promising research potential thanks to greater content creation space. Recent studies reveal that the goal of long video generation tasks is not only to extend video duration but also to accurately express richer narrative content within longer videos. 
 However, due to the lack of evaluation benchmarks specifically designed for long video generation models, the current assessment of these models primarily relies on benchmarks with simple narrative prompts (\eg, VBench).
-To comprehensively assess the <b>Narr</b>ative expression capabilities of <b>L</b>ong <b>V</b>ideo generation models, we propose <b>NarrLV</b>- a novel benchmark inspired by film narrative theory.
+To comprehensively assess the <b>Narr</b>ative expression capabilities of <b>L</b>ong <b>V</b>ideo generation models, we propose <b>NarrLV</b> - a novel benchmark inspired by film narrative theory.
 (<b>i</b>) First, we introduce the basic narrative unit maintaining continuous visual presentation in videos as Temporal Narrative Atom (TNA), and use its count to quantitatively measure narrative richness. Guided by three key film narrative elements influencing TNA changes, we construct an automatic prompt generation pipeline capable of producing evaluation prompts with a flexibly expandable number of TNAs.
 (<b>ii</b>) Then, based on the three progressive levels of narrative content expression, we design an effective evaluation metric using the MLLM-based question generation and answering framework.
 (<b>iii</b>) Finally, we conduct extensive evaluations on existing long video generation models and the foundation generation models that underpin them. Experimental results demonstrate that our metric aligns closely with human judgments. The derived evaluation outcomes reveal the detailed capability boundaries of current video generation models in narrative content expression. 
@@ -185,6 +170,91 @@ To comprehensively assess the <b>Narr</b>ative expression capabilities of <b>L</
 </section>
 
 
+<!-- teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: left;"><b>Framework of our NarrLV</b></h2>
+        <div class="content">
+          <div class="hero-body" style="padding: 0;">
+            <p style="margin-top: 0; white-space: pre-line;">
+              (a) Our prompt suite is inspired by film narrative theory and identifies three key factors influencing Temporal Narrative Atom (TNA) transitions. Based on these, we construct a prompt generation pipeline capable of producing evaluation prompts with flexibly adjustable TNA counts.
+              
+              (b) Our evaluation models include long video generation models and the foundation models they often rely on.
+              
+              (c) Based on the progressive expression of narrative content, we conduct evaluations from three dimensions, employing an MLLM-based question generation and answering framework for calculations. Our metric is well-aligned with human preferences.
+            </p>
+            <img src="assets/narrlv/images/fig_framework.jpg" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: left;"><b>Evaluation Results</b></h2>
+        <div class="content">
+          <div class="hero-body" style="padding: 0;">
+            <p style="margin-top: 0; white-space: pre-line;">
+              Our evaluation model encompasses existing long video generation models as well as the foundational generation models they typically rely on: 
+            </p>
+            <img src="assets/narrlv/images/eval1.png" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+            <img src="assets/narrlv/images/eval2.png" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+
+            <p style="margin-top: 0; white-space: pre-line;">
+              <b>Note</b>: We will continuously update the evaluation results of the latest long video generation models.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: left;"><b>Extensible TNA-Driven Prompt Suite</b></h2>
+        <div class="content">
+          <div class="hero-body" style="padding: 0;">
+            <p style="margin-top: 0; white-space: pre-line;">
+              The number of Temporal Narrative Atoms (TNA) serves as a quantitative measure of narrative richness. Unlike existing representative benchmarks that concentrate on prompts with only a small number of TNAs in a narrow range, our innovative prompt suite can flexibly expand narrative content richness, thereby enabling a thorough assessment of the full narrative capabilities of long video generation models. Its word cloud clearly shows that words like "suddenly," "next," and "finally," which pertain to the progression of narrative content, hold significant weight, aligning with our narrative-centric evaluation objectives.
+            </p>
+            <img src="assets/narrlv/images/readme_prompt_suit.png" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: left;"><b>Progressive Narrative-Expressive Evaluation Metric</b></h2>
+        <div class="content">
+          <div class="hero-body" style="padding: 0;">
+            <p style="margin-top: 0; white-space: pre-line;">
+              To systematically evaluate the narrative quality of long video generation, we introduce three core metrics: Narrative Element Fidelity (<b><i>R</i></b><sub>fid</sub>), Narrative Unit Coverage (<b><i>R</i></b><sub>cov</sub>), and Narrative Unit Coherence (<b><i>R</i></b><sub>coh</sub>). Among these, <b><i>R</i></b><sub>fid</sub> focuses on the generation performance of narrative elements represented by scenes and objects. <b><i>R</i></b><sub>cov</sub> and <b><i>R</i></b><sub>coh</sub> emphasize the generation quality of narrative units composed of narrative elements. In addition, we utilize a recently popular MLLM-based question generation and answer framework for quantitative evaluation.
+            </p>
+            <img src="assets/narrlv/images/readme_prompt_suit.png" style="width:100%; margin-bottom:2px" alt="Teaser."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- footer -->
